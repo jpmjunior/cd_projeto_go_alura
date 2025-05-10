@@ -13,7 +13,8 @@ jobs:
     environment: test
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout projeto
+      uses: actions/checkout@v4
 
     - name: Set up Go
       uses: actions/setup-go@v4
